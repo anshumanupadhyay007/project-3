@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store - Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">ShoeStore</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Product Section -->
+    <div class="product-container">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="https://png.pngtree.com/png-clipart/20230506/original/pngtree-colorful-sneakers-running-shoes-png-image_9145051.png" alt="Stylish Running Shoe" id="currentImage">
+            </div>
+            <div class="thumbnail-gallery">
+                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1556130360-vaporfly-4-flyknit-running-shoe-v7G3FB.jpg?crop=0.915xw:0.488xh;0.0449xw,0.322xh" alt="Shoe Thumbnail" class="thumbnail" onclick="changeImage('shoe.jpg')">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Shoe Thumbnail" class="thumbnail" onclick="changeImage('shoe2.jpg')">
+                <img src="https://i.kinja-img.com/gawker-media/image/upload/t_original/uf3bxp9vh639gkksk4kf.jpg" alt="Shoe Thumbnail" class="thumbnail" onclick="changeImage('shoe3.jpg')">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Stylish Running Shoe</h1>
+            <p class="price">₹8999</p>
+            <p class="description">
+                These stylish running shoes are perfect for athletes and casual wearers alike. Designed for comfort and performance, they offer excellent support and durability. Available in multiple sizes.
+            </p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p>⭐️⭐️⭐️⭐️⭐️ - "Great shoes! Very comfortable and stylish."</p>
+                </div>
+                <div class="review">
+                    <p>⭐️⭐️⭐️⭐️ - "Good quality, but a bit expensive."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products Section -->
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="product-card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.s4_O660Vah0Hx-Z_6Zct0wAAAA&pid=Api&P=0&h=180" alt="Casual Sneaker">
+            <h3>Casual Sneaker</h3>
+            <p class="price">₹69.99</p>
+            <button class="view-product">View Product</button>
+       
+        </div>
+    </div>
+    <!-- Footer --
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ShoeStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Quick View Popup -->
+    <div class="quick-view" id="quickView">
+        <div class="quick-view-content">
+            <span class="close" onclick="closeQuickView()">&times;</span>
+           
+    <script>
+        // JavaScript to change main image based on thumbnail click
+        function changeImage(src) {
+            document.getElementById('currentImage').src = src;
+            document.getElementById('quickViewImage').src = src;
+        }
+
+        // JavaScript for Quick View Popup
+        function closeQuickView() {
+            document.getElementById('quickView').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
